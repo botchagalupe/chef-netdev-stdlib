@@ -1,0 +1,9 @@
+# CHANGELOG
+
+## 2013-03-29
+
+* Initial release of cookbooks
+
+## 2013-03-31
+
+* Reorganized resources in multiple cookbooks for abstract implementation
