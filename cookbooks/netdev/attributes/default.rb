@@ -1,1 +1,0 @@
-default[:netdev][:provider] = "netdev"
