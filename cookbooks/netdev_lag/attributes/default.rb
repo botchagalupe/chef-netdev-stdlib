@@ -1,1 +1,0 @@
-default[:netdev_lag][:provider] = 'netdev_lag'

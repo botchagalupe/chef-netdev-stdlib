@@ -1,18 +1,31 @@
-# DESCRIPTION
-The netdev_lag cookbook provides a set of abstract resources for managing LAG interfaces on network devices.  
+# NetdevOps Cookbook: netdev_lag
 
-# EXAMPLE USAGE
-The netdev_lag cookbook requires a provider implementation for the specific device being implemented on.  The device provider should implement the set of provider actions in order to successfully use this cookbook.
+## Overview
+The netdev_lag cookbook provides an abstraction for building lag resources for network devices.   
 
-# DEPENDENCIES
+## Actions
 
-  * Chef 10
+| Action | Description |
+| ------ | ------- |
+| create | Default. Creates a new lag interface or modifies the properties of an existing lag |
+| delete | Deletes a lag resource from the network element |
 
-# CONTRIBUTORS
+## Attributes
 
+| Attribute | Description |
+| --------- | ----------- |
+| name | Required.  Specifies the name of the lag interface |
+| links | Optional.  Specifies an array of links to be included in the lag |
+| minimum_links | Optional.  Specifies the minimum number of links that need to up to consider the lag interface up |
+| lacp | Optional.  Controls whether LACP should be used or not.  Valid values are 'disable', 'active', 'passive'.|
+
+## Dependencies
+  * Chef 10 or later
+  * One or more vendor cookbook implementations
+  
+## Contributors
   * Peter Sprygada, @privateip
   * Jeremy Schulman, @nwkautomaniac
 
-# LICENSES
-
-   BSD-2, See LICENSE file
+## License
+Apache 2.0, See LICENSE file
