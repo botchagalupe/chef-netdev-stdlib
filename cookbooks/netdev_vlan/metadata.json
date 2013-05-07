@@ -1,0 +1,29 @@
+{
+  "maintainer_email": "sprygada@gmail.com",
+  "version": "1.0.0",
+  "recipes": {
+  },
+  "description": "NetdevOps provides a vendor neutral abstraction of network resources",
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+  },
+  "license": "Apache v2.0",
+  "name": "netdev_vlan",
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "replacing": {
+  },
+  "platforms": {
+  },
+  "providing": {
+  },
+  "maintainer": "Peter Sprygada",
+  "long_description": "# NetdevOps Cookbook: netdev_vlan\n\n## Overview\nThe netdev_vlan cookbook provides an abstraction for building vlan resources for network devices.  The netdev provider must implement all required attributes and should implement optional attributes if supported.  \n\n## Actions\n\n| Action | Description |\n| ------ | ------- |\n| create | Default. Creates a new vlan or modifies the properties of an existing vlan |\n| delete | Deletes a vlan resource from the network element |\n\n## Attributes\n\n| Attribute | Description |\n| --------- | ----------- |\n| vlan_id | Required.  The vlan id to use for this vlan. |\n| name | Required.  The name of this vlan |\n| description | Optional.  A string description of the vlan |\n| active | Optional.  Whether or not the vlan is active.  Valid values are 'true' or 'false' and the default value is 'true' |\n\n## Dependencies\n  * Chef 10 or later\n  * One or more vendor cookbook implementations\n  \n## Contributors\n  * Peter Sprygada, @privateip\n  * Jeremy Schulman, @nwkautomaniac\n\n## License\nApache 2.0, See LICENSE file\n"
+}
