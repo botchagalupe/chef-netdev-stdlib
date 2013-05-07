@@ -19,8 +19,9 @@
 actions :create, :delete
 default_action :create
 
-attribute :name,      :kind_of => String, :name_attribute => true
-attribute :vlan_id,   :kind_of => Integer, :required => true
-attribute :state,     :kind_of => String, :equal_to => [ 'present', 'absent' ]
+attribute :name,          :kind_of => String, :name_attribute => true
+attribute :vlan_id,       :kind_of => Integer, :required => true
+attribute :description,   :kind_of => String
+attribute :active,        :kind_of => [TrueClass, FalseClass], :default => true
 
 attr_accessor :exists
